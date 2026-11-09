@@ -22,3 +22,7 @@ attack(conan, merlin)
 attack(merlin, conan)
 print(merlin.name, merlin.health)
 print(conan.name, conan.health)
+
+# exe 4
+# 1. yes, because they have the same method 
+# 2. polymorphism without the inherent
