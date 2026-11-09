@@ -4,6 +4,9 @@ from classes.PayPal import PayPal
 from classes.Character import Character
 from classes.Mage import Mage
 from classes.Warrior import Warrior
+from classes.Shape import Shape
+from classes.Circle import Circle
+from classes.Square import Square
 # exe 1,2
 def checkout(type_payment,amount):
     return f"{type_payment.pay(amount)} | fee:{type_payment.fee(100)}"
@@ -26,3 +29,8 @@ print(conan.name, conan.health)
 # exe 4
 # 1. yes, because they have the same method 
 # 2. polymorphism without the inherent
+
+# exe 5
+shape = [Square(3),Circle(3)]
+for item in shape:
+    print(item.area())
