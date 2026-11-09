@@ -1,8 +1,8 @@
 
 class Character:
-    def __init__(self,name,life):
+    def __init__(self,name,health):
         self.name = name
-        self.life = life
+        self.life = health
     def attack_power(self):
         raise NotImplementedError("error")
         
