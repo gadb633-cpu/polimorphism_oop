@@ -1,8 +1,7 @@
 from abc import ABC,abstractmethod
 class PaymentMethod(ABC):
-    def __init__(self,name,amount):
+    def __init__(self,name):
         self.name =name
-        self.amount = amount
     @abstractmethod    
-    def pay(self):
+    def pay(self,amount):
         pass
